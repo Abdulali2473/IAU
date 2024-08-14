@@ -35,7 +35,7 @@
             align-items: middle;
         }
         .navbar-brand img {
-            height: 80px; /* تعديل الارتفاع حسب الشعار */
+            height: 75px; /* تعديل الارتفاع حسب الشعار */
         }
         .navbar i {
             margin-middle: 5px;
@@ -200,17 +200,7 @@
         </a>
 		</nav>
 		
-		<div id="google_translate_element"></div>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'ar',
-        includedLanguages: 'ar,en',
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-      }, 'google_translate_element');
-    }
-  </script>
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		
 	
 	 <div class="icon-bar">
         <a href="https://www.iau.edu.sa" id="homeOption"><i class="fas fa-home"></i> الصفحة الرئيسية</a>
@@ -225,12 +215,23 @@
             <p></p>
         </div>
 	
+	<div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'ar',
+        includedLanguages: 'ar,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	
 	 <div class="col-md-4">
 	  <div class="card icon-option" id="departmentsOption">
-                    <i class="fas fa-sitemap custom-icon"></i> 
+                    <i class="fas fa-sitemap"></i> 
 					 <h3>الوحدات</h3>
 					  <div id="contentArea" class="container mt-5">
-            
         </div>
     <select id="unitDropdown" class="dropdown" onchange="showEmployees()">
         <option value="">اختر وحدة</option>
@@ -243,43 +244,27 @@
         <option value="وحدة الاتصالات الإدارية">وحدة الاتصالات الإدارية</option>
         <option value="وحدة المالية">وحدة المالية</option>
         <option value="وحدة الابتعاث والتدريب">وحدة الابتعاث والتدريب</option>
-		<option value="وحدة الدعم الفني">وحدة الدعم الفني</option>
+		 <option value="شؤون الابتعاث">شؤون الابتعاث</option>
         <option value="وحدة التسجيل">وحدة التسجيل</option>
         <option value="وحدة تقنية المعلومات">وحدة تقنية المعلومات</option>
-        <option value="وحدة الصادر والوارد">وحدة الصادر والوارد</option>
-        <option value="شؤون الابتعاث">شؤون الابتعاث</option>
     </select>
     <div id="employeeList" class="employee-list"></div>
 </div>
 </div>
  <div class="faq-group">
 	  <div class="card icon-option" id="departmentsOption">
-                    <i class="fas fa-sitemap custom-icon"></i> 
+                    <i class="fas fa-graduation-cap"></i> 
 					  
-            <div class="faq-icon" onclick="toggleAnswers(1)">الأسئلة حول القبول</div>
-            <div class="answer" id="answers1">
-                <p>ماهي شروط القبول؟ شروط القبول موضحة في نفس البرنامج.</p>
-                <p>هل هناك سن محدد للتقدم؟ لا يوجد هناك سن محدد.</p>
-                <p>هل هناك أولوية في القبول حسب تاريخ التقدم؟ لا ليس هناك أولوية لذلك.</p>
-                <p>من أين يمكن للمتقدم استلام التوصية؟ من جهة التخرج الخاصة بالمتقدم.</p>
-                <p>هل يمكن التقدم بدون إرفاق السجل الأكاديمي؟ يتعذر قبول الطلب بدون إرفاق السجل.</p>
-            </div>
+            <div class="faq-icon">
+           <a href="https://admitgraduate.iau.edu.sa/%D8%AD%D9%88%D9%84-%D8%B9%D9%85%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7" id="departmentsOption"> بوابة القبول</a></div>
         
 	
         <div class="faq-group">
 		
-            <div class="faq-icon" onclick="toggleAnswers(2)">الأسئلة حول التسجيل</div>
-            <div class="answer" id="answers2">
-                <p>هل يمكن تسجيل رغبتين؟ لا، البرنامج لا يتيح سوى رغبة واحدة.</p>
-                <p>هل يمكن الدراسة في برنامجين بنفس الوقت؟ لا يمكن ذلك.</p>
-                <p>هل يمكن التقديم لجامعتكم ولجامعة أخرى في نفس الوقت؟ نعم، ولكن يلزم إلغاء قبولك في الأخرى.</p>
-                <p>سبق لي التقديم ولم أُقبل، هل أتقدم بطلب جديد؟ يلزم التقديم بطلب جديد.</p>
-            </div>
+            <div class="faq-icon">
+           <a href="https://admitgraduate.iau.edu.sa/" id="departmentsOption"> العمادة</a></div>  
         </div>
      </div>
-   
-	
-	
 	<script>
     const units = {
         "عميد الدراسات العليا": [
@@ -313,7 +298,8 @@
         "وحدة المالية": [
             { name: "أ. مشاري بن جاسم محمد الدوسري", office: "3068", email: "mjaldossary@iau.edu.sa", extension: "32571" },
             { name: "أ. محمد بن رضا حسن البحاري", office: "3068", email: "hralbahari@iau.edu.sa", extension: "32557" },
-            { name: "أ. ريما بنت عبد الرحمن إبراهيم المهوس", office: "3017", email: "raalmahws@iau.edu.sa", extension: "32593" }
+            { name: "أ. ريما بنت عبد الرحمن إبراهيم المهوس", office: "3017", email: "raalmahws@iau.edu.sa", extension: "32593" },
+			{ name: "أ. هتون محمد عبدالقادر العيساوي", office: "3121", email: "hmalisawi@iau.edu.sa", extension: "32581" }
         ],
         "وحدة الابتعاث والتدريب": [
             { name: "أ. حسين بن محمد معتوق ال عاشور", office: "3070", email: "halashoor@iau.edu.sa", extension: "32564" },
@@ -323,10 +309,7 @@
             { name: "أ. ضحى بنت عبدالله عبدالعزيز الدحيلان", office: "3001", email: "dalduhailan@iau.edu.sa", extension: "32270" },
             { name: "أ. فيحاء بنت نايف فيجان ربيعان", office: "3001", email: "Fnalrobeaan@iau.edu.sa", extension: "32259" }
         ],
-		"وحدة الدعم الفني": [
-            { name: "أ. هيام بنت بكر احمد بغدادي", office: "3016", email: "habaghdadi@iau.edu.sa", extension: "32582" },
-            { name: "أ. منى بنت عبدالرحمن عبداللطيف النعيم", office: "3016", email: "mbalnaim@iau.edu.sa", extension: "32577" }
-        ],
+		
         "وحدة التسجيل": [
             { name: "أ. مشاعل بنت عبدالله علي المحيميد", office: "3019", email: "maalmohaimeed@iau.edu.sa", extension: "32583" },
             { name: "أ. نورة بنت عثمان إبراهيم العثمان", office: "3020", email: "noalothman@iau.edu.sa", extension: "32592" },
@@ -336,9 +319,7 @@
             { name: "أ. هيام بنت بكر احمد بغدادي", office: "3016", email: "habaghdadi@iau.edu.sa", extension: "32582" },
             { name: "أ. منى بنت عبدالرحمن عبداللطيف النعيم", office: "3016", email: "mbalnaim@iau.edu.sa", extension: "32577" }
         ],
-        "وحدة الصادر والوارد": [
-            { name: "أ. سليمان بن عبدالله حسين العريني", office: "3073", email: "Sahaloraini@iau.edu.sa", extension: "-" }
-        ],
+       
         "شؤون الابتعاث": [
             { name: "أ. منال بنت سلمان حمد الخالدي", office: "3004", email: "msalkhaldi@iau.edu.sa", extension: "32590" },
             { name: "أ. عائشة بنت عبداللطيف على ابن حريب", office: "3002", email: "aahareb@iau.edu.sa", extension: "32589" },
@@ -466,46 +447,7 @@ document.getElementById('englishBtn').addEventListener('click', function() {
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script>
-    function toggleAnswers(index) {
-        const answers = document.getElementById(`answers${index}`);
-        answers.style.display = answers.style.display === 'none' || answers.style.display === '' ? 'block' : 'none';
-    }
-</script>
-	<script>
-	fetch('languages.json')
-  .then(response => response.json())
-  .then(data => {
-    const languages = data;
-
-    // تحديد العناصر التي ستتم ترجمتها
-    const titleElement = document.getElementById('title');
-    const descriptionElement = document.getElementById('description');
-    const languageSwitcher = document.getElementById('language-switcher');
-
-    // دالة لتغيير اللغة
-    function changeLanguage(lang) {
-      document.documentElement.lang = lang;
-      document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
-
-      titleElement.textContent = languages[lang].title;
-      descriptionElement.textContent = languages[lang].description;
-      languageSwitcher.textContent = languages[lang].button_english; // يمكنك تخصيص هذا النص
-    }
-
-    // إضافة حدث النقر إلى زر تغيير اللغة
-    languageSwitcher.addEventListener('click', () => {
-      const currentLang = document.documentElement.lang;
-      const newLang = currentLang === 'ar' ? 'en' : 'ar';
-      changeLanguage(newLang);
-    });
-
-    // تحديد اللغة الافتراضية (يمكنك تغييرها)
-    changeLanguage('ar');
-  });
-</script>
 	
-  
   <script>
     const units = document.querySelectorAll('.unit');
     const unitDetails = document.querySelectorAll('.unit-details');
