@@ -239,14 +239,17 @@
 		<option value="وكيل الدراسات العليا">وكيل الدراسات العليا</option>
 		<option value="سكرتير مكتب العميد">سكرتير مكتب العميد</option>
         <option value="الشؤون الإدارية والمالية">الشؤون الإدارية والمالية</option>
+		<option value="وحدة المالية">وحدة المالية</option>
         <option value="وحدة القبول">وحدة القبول</option>
-        <option value="وحدة الخريجين">وحدة الخريجين</option>
+		<option value="وحدة التسجيل">وحدة التسجيل</option>
+		<option value="وحدة الشؤون الأكاديمية">وحدة الشؤون الأكاديمية</option>
+		<option value="وحدة تقنية المعلومات">وحدة تقنية المعلومات</option>
         <option value="وحدة الاتصالات الإدارية">وحدة الاتصالات الإدارية</option>
-        <option value="وحدة المالية">وحدة المالية</option>
         <option value="وحدة الابتعاث والتدريب">وحدة الابتعاث والتدريب</option>
-		 <option value="شؤون الابتعاث">شؤون الابتعاث</option>
-        <option value="وحدة التسجيل">وحدة التسجيل</option>
-        <option value="وحدة تقنية المعلومات">وحدة تقنية المعلومات</option>
+		<option value="شؤون الابتعاث">شؤون الابتعاث</option>
+		<option value="وحدة الخريجين">وحدة الخريجين</option>
+       
+       
     </select>
     <div id="employeeList" class="employee-list"></div>
 </div>
@@ -256,15 +259,28 @@
                     <i class="fas fa-graduation-cap"></i> 
 					  
             <div class="faq-icon">
-           <a href="https://admitgraduate.iau.edu.sa/%D8%AD%D9%88%D9%84-%D8%B9%D9%85%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7" id="departmentsOption"> بوابة القبول</a></div>
+           <a href="https://www.iau.edu.sa/ar/administration/deanships/deanship-of-graduate-studies" id="departmentsOption"> صفحة عمادة الدراسات العليا</a></div>
         
 	
         <div class="faq-group">
 		
             <div class="faq-icon">
-           <a href="https://admitgraduate.iau.edu.sa/" id="departmentsOption"> العمادة</a></div>  
+           <a href="https://admitgraduate.iau.edu.sa/" id="departmentsOption"> بوابة التقديم للدراسات العليا</a></div>  
+		   
+		   <div class="faq-group">
+		
+            <div class="faq-icon">
+           <a href="https://www.iau.edu.sa/ar/administration/deanships/deanship-of-graduate-studies/guidebooks" id="departmentsOption"> الأدلة الإرشادية</a></div>  
+		   
+		    <div class="faq-group">
+		
+            <div class="faq-icon">
+           <a href="https://www.iau.edu.sa/ar/administration/deanships/deanship-of-graduate-studies/academic-calendar-for-graduate-studies" id="departmentsOption"> التقويم الأكاديمي</a></div> 
         </div>
      </div>
+	 </div>
+	 </div>
+	 
 	<script>
     const units = {
         "عميد الدراسات العليا": [
@@ -301,6 +317,9 @@
             { name: "أ. ريما بنت عبد الرحمن إبراهيم المهوس", office: "3017", email: "raalmahws@iau.edu.sa", extension: "32593" },
 			{ name: "أ. هتون محمد عبدالقادر العيساوي", office: "3121", email: "hmalisawi@iau.edu.sa", extension: "32581" }
         ],
+		"وحدة الشؤون الأكاديمية": [
+            { name: "د. محمد إسماعيل عبد الرحمن إسماعيل", office: "3122", email: "miismail@iau.edu.sa", extension: "32570" },
+        ],
         "وحدة الابتعاث والتدريب": [
             { name: "أ. حسين بن محمد معتوق ال عاشور", office: "3070", email: "halashoor@iau.edu.sa", extension: "32564" },
             { name: "أ. إبراهيم بن محمد طاهر اليوسف", office: "3071", email: "imalyousef@iau.edu.sa", extension: "32574" },
@@ -309,7 +328,6 @@
             { name: "أ. ضحى بنت عبدالله عبدالعزيز الدحيلان", office: "3001", email: "dalduhailan@iau.edu.sa", extension: "32270" },
             { name: "أ. فيحاء بنت نايف فيجان ربيعان", office: "3001", email: "Fnalrobeaan@iau.edu.sa", extension: "32259" }
         ],
-		
         "وحدة التسجيل": [
             { name: "أ. مشاعل بنت عبدالله علي المحيميد", office: "3019", email: "maalmohaimeed@iau.edu.sa", extension: "32583" },
             { name: "أ. نورة بنت عثمان إبراهيم العثمان", office: "3020", email: "noalothman@iau.edu.sa", extension: "32592" },
