@@ -132,10 +132,9 @@
             margin-center: 5px;
         }
         
-		
 		 footer {
-            text-align: center;
-            padding:10px;
+            text-align: fixed;
+            padding: 5px;
             background-color: #003366;
             color: white;
 			
@@ -143,19 +142,19 @@
         header {
             background-color: #003366;
             color: white;
-            padding: 10px;
+            padding: 5px;
             text-align: center;
         }
         .container {
-            display: flex;
+            display: fixed;
             justify-content: space-between;
-            margin: 10px;
+            margin: 5px;
         }
         .units, .faq {
             width: 45%;
         }
         .units select {
-            padding: 10px;
+            padding: 5px;
             font-size: 16px;
             width: 100%;
         }
@@ -186,11 +185,10 @@
 		/* Styles for mobile devices */
 @media only screen and (max-width: 600px) {
     .container {
-        padding: 20px;
+	    display: fixed;
+        padding: 10px;
     }
 }
-
-
     </style>
 </head>
 
@@ -201,6 +199,7 @@
             <img src="logo.png" alt="شعار جامعة الإمام عبدالرحمن بن فيصل">
         </a>
 		</nav>
+		
 		
 	
 	 <div class="icon-bar">
@@ -228,7 +227,7 @@
   </script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	
-	 <div class="container-mt-5">
+	 <div class="container">
 	  <div class="card icon-option" id="departmentsOption">
                     <i class="fas fa-sitemap"></i> 
 					 <h3>الوحدات</h3>
@@ -255,7 +254,7 @@
     <div id="employeeList" class="employee-list"></div>
 </div>
 </div>
- <div class="container">
+ <div class="faq-group">
 	  <div class="card icon-option" id="departmentsOption">
                     <i class="fas fa-graduation-cap"></i> 
 					  
@@ -507,7 +506,7 @@ document.getElementById('englishBtn').addEventListener('click', function() {
 	<footer>
     <p>للاتصال من خارج الجامعة: يرجى إضافة 33 قبل رقم التحويلة. مثال: 33-3333-3333</p>
     <p>جميع الحقوق محفوظة &copy; 2024 جامعة الإمام عبدالرحمن بن فيصل</p>
-    </footer>
+</footer>
 		</body>
 		
 </html>
